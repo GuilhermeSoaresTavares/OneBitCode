@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 60px;
+}
+
+.content {
+  flex: 1 0 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "section section section aside"
+    "section section section aside";
+  padding-top: 20px;
+}
+
+.posts section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "boxe crossfit natacao"
+    "roupas basquete corrida"
+    "surf trilha tenis";
+  padding: 20px 15px;
+  gap: 15px;
+  padding-top: 0;
+}
+
+.posts aside {
+  grid-area: aside;
+  background-color: #333;
+  color: #FFF;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "asideTitle"
+  "bicicletas"
+  "esporFrio"
+  "skate"
+  "futebolAmericano"
+  "yoga";
+  gap:15px;
+
+}
+
+.card {
+  text-align: left;
+}
+
+.card img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 200px;
+}
+
+.cardAside img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 150px;
+}
+
+.card .cardTitle {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.boxe {
+  grid-area: boxe;
+}
+
+.crossfit {
+  grid-area: crossfit;
+}
+
+.natacao {
+  grid-area: natacao;
+}
+
+.roupas {
+  grid-area: roupas;
+}
+
+.basquete {
+  grid-area: basquete;
+}
+
+.corrida {
+  grid-area: corrida;
+}
+
+.surf {
+  grid-area: surf;
+}
+
+.trilha {
+  grid-area: trilha;
+}
+
+.tenis {
+  grid-area: tenis;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.asideTitle{
+  grid-area: asideTitle;
+}
+
+.bicicletas{
+  grid-area: bicicletas;
+}
+
+.esporFrio{
+  grid-area: esporFrio;
+}
+.skate{
+  grid-area:skate;
+}
+.futebolAmericano{
+  grid-area:futebolAmericano;
+}
+.yoga{
+  grid-area:yoga;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  padding: 15px;
+}
+
+a:hover {
+  color: white;
+
+  border-bottom: 1px solid black;
+}
+
+.posts img {
+  width: 100%;
+}
